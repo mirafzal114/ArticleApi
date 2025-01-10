@@ -24,9 +24,9 @@ TEMPLATES_DIRS = BASE_DIR / 'templates'
 SECRET_KEY = 'django-insecure--yg5@1rly()1^-@ip6_zboz4ex48*8!h!p7z18b*x1ngnnuj(+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*','127.0.0.1', '.vercel.app']
 
 
 # Application definition
@@ -71,7 +71,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'ArticleApi.wsgi.application'
+WSGI_APPLICATION = 'ArticleApi.wsgi.app'
 
 
 # Database
